@@ -32,5 +32,57 @@ public class MarshmallowMonster
 		this.noseCount = noseCount; 
 		this.legCount = legCount;
 	}
+	
+	
+	
+	public String toString()
+	{
+		String description = "Name is " + this.name;
+		return description;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getEyeCount()
+	{
+		return eyeCount;
+	}
+	
+	public double getAntennaCount()
+	{
+		return antennaCount;
+	}
+	
+	public boolean getHasBellyButton()
+	{
+		return hasBellyButton;
+	}
+	
+	public int getArmCount()
+	{
+		return armCount;
+	}
+	
+	public int getNoseCount()
+	{
+		return noseCount;
+	}
+	
+	public int getLegCoount()
+	{
+		return legCount;
+	}
 }
-//* 
+
+
+
+/* ümlot the Destroyer of Languages
+	antenna 1
+	eyes 0
+	belly button 0
+	arms 2
+	nose 0
+	legs 5*/

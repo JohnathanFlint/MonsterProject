@@ -8,12 +8,12 @@ public class MonsterController
 	
 	public MonsterController()
 	{
-		firstMonster = new MarshmallowMonster("Umlot the Destroyer of Languages", 0.5, 1, false, 2, 0, 5);
+		firstMonster = new MarshmallowMonster("ümlot the Destroyer of Languages! ", 1.5, 1, false, 2, 0, 5);
 	}
 	
 	public void start()
 	{
-		System.out.println("My monster is here to destroy your language!" + firstMonster);
+		System.out.println("This is my monster: " + firstMonster);
 		
 	}
 
