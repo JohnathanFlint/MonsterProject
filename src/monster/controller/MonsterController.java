@@ -53,7 +53,15 @@ public class MonsterController
 				System.out.println("You feel the salt thump into your back causing you to stumble. You manage to keep running and escape but you are now eternally salty.");
 			}			
 		}
-		
+		else if(firstMove .equalsIgnoreCase("Fight"))
+		{
+			System.out.println("You rush the monster causing it to roar and swipe at you. What do you do?");
+			String firstFightMove = keyboardInput.nextLine();
+			if (firstFightMove .equalsIgnoreCase("Dodge"))
+			{
+				System.out.println("You narrowly dodge the strike and feel it graze your face leaving a trail of blood. You land next to a flute, sword, and crossbow what do you do?");
+			}
+		}
 			
 	}
 
