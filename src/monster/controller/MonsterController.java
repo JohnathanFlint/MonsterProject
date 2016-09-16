@@ -8,7 +8,7 @@ public class MonsterController
 	
 	public MonsterController()
 	{
-		firstMonster = new MarshmallowMonster("ümlot the Destroyer of Languages! ", 1.5, 1, false, 2, 0, 5);
+		firstMonster = new MarshmallowMonster("ümlot the Destroyer of Languages! ", 1.5, 1, false, 2, 0, 5); //constructor call
 	}
 	
 	public void start()
