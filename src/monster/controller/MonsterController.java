@@ -2,6 +2,7 @@ package monster.controller;
 
 import monster.model.MarshmallowMonster;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,11 +12,13 @@ public class MonsterController
 {
 	private MarshmallowMonster firstMonster;
 	private Scanner keyboardInput;
+	private ArrayList<Thingy> weaponsList;
 	
 	public MonsterController()
 	{
 		firstMonster = new MarshmallowMonster("ümlot the Destroyer of Languages! ", 1.5, 1, false, 2, 0, 5); //constructor call
 		keyboardInput = new Scanner(System.in);
+		weaponsList = new ArrayList<Thingy>();
 	}
 	
 	public void start()
@@ -27,12 +30,12 @@ public class MonsterController
 //			System.out.println("That's a lot of eyes!!!!!!!!!!! - Scary");
 //		}
 		
-		monsterDecisions();
+		//monsterDecisions();
 		loopMonster();
 	}
 		
 		
-		private void monsterDecisions()
+		/**private void monsterDecisions()
 		{
 		System.out.println("Do you want to change my name?");
 		String answer = keyboardInput.nextLine();
@@ -94,7 +97,7 @@ public class MonsterController
 				
 		
 		}
-		}
+		}**/
 		
 		
 		
@@ -124,6 +127,51 @@ public class MonsterController
 		for(int count = 0; count < 1000; count++)
 		{
 			System.out.println("First monster words" + firstMonster);
+		}
+		
+		int anger = 0;
+		while(anger <= 5)
+		{
+			System.out.println("The monster Sleeps.");
+			anger++;
+			if(anger == 5)
+			{
+				System.out.println("The monster wakes with a mighty roar.");
+			}
+		}
+		
+		for (int size = 0; size <= 10; size++)
+		{
+			if(size == 10)
+			{
+				System.out.println("Its size is over 9000!");
+			}
+			else
+			{
+				System.out.println("The monster grows in size.");
+			}
+		}
+		
+		for (int weapons = 0; weapons < 10; weapons++)
+		{
+			Thingy addWeapon = new Thingy();
+			weaponsList.add(addWeapon);
+		
+		
+			for(Thingy weaponString : weaponsList)
+			{
+				System.out.println("You have " + weaponString + " weapons");
+			}
+		}
+		
+		if (weaponsList.size() > 7)
+		{
+			Thingy breakWeapon = new Thingy();
+			weaponsList.remove(breakWeapon);
+			for(Thingy weaponString : weaponsList)
+			{
+				System.out.println("Some of your weapons ha broken. You have " + weaponString + " left.");
+			}
 		}
 	}
 
