@@ -30,12 +30,12 @@ public class MonsterController
 //			System.out.println("That's a lot of eyes!!!!!!!!!!! - Scary");
 //		}
 		
-		//monsterDecisions();
+		monsterDecisions();
 		loopMonster();
 	}
 		
 		
-		/**private void monsterDecisions()
+		private void monsterDecisions()
 		{
 		System.out.println("Do you want to change my name?");
 		String answer = keyboardInput.nextLine();
@@ -97,7 +97,7 @@ public class MonsterController
 				
 		
 		}
-		}**/
+		}
 		
 		
 		
@@ -170,7 +170,7 @@ public class MonsterController
 			weaponsList.remove(breakWeapon);
 			for(Thingy weaponString : weaponsList)
 			{
-				System.out.println("Some of your weapons ha broken. You have " + weaponString + " left.");
+				System.out.println("Some of your weapons have broken. You have " + weaponString + " left.");
 			}
 		}
 	}
